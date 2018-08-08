@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "GitHub Pages + Jekyll"
-subtitle:   "\"快速搭建博客\""
+title:      "远程桌面连接出现内部错误"
+subtitle:   ""
 date:       2018-03-23 20:30:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
