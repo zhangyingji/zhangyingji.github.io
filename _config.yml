@@ -2,10 +2,10 @@
 title: Zhang Yingji's Blog
 SEOTitle: 张荧集的博客 | Zhang Yingji's Blog
 header-img: img/home-bg.jpg
-email: zhang_yingji@foxmail.como
+email: zhang_yingji@foxmail.com
 description: ""
 keyword: "张荧集，博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://zhangyingji.github.io/"              # your host, for absolute URL
+url: "blog.zhangyingji.cn"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
