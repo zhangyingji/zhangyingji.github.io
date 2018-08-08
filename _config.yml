@@ -13,11 +13,11 @@ future: true
 
 # SNS settings
 RSS: false
-#weibo_username:     huxpro
-#zhihu_username:     huxpro
+#weibo_username:     zhangyingji
+#zhihu_username:     zhangyingji
 github_username:    zhangyingji
-#twitter_username:   huxpro
-#facebook_username:  huxpro
+#twitter_username:   zhangyingji
+#facebook_username:  zhangyingji
 #linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -72,7 +72,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "try and try"
+sidebar-about-description: "生活是爱的姿态"
 sidebar-avatar: /img/avatar-my.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
