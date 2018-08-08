@@ -1,5 +1,5 @@
 ### Zhang Yingji's Blog
-blog.zhangyingji.cn
+https://blog.zhangyingji.cn/
 
 ### GitHub Pages
 开启本功能，首先新建仓库,仓库名为
