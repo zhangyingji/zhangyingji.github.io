@@ -10,5 +10,6 @@ tags:
     - 网络
 ---
 
+
 1. 管理员权限打开CMD
 2. 输入netsh winsock reset，重置 Winsock 目录
