@@ -61,7 +61,7 @@ jekyll serve
 2018-08-08-how-to-write-a-blog.md
 ```
 
-3. 文章内容需包含YAML头信息
+文章内容需包含YAML头信息
 
 ```
 # 参考http://jekyllcn.com/docs/frontmatter/
@@ -83,13 +83,14 @@ git push
 ```
 
 ### GitHub Pages 绑定二级域名
-1. 在GitHub项目中创建CNAME文件，内容为指向的网址
+
+在GitHub项目中创建CNAME文件，内容为指向的网址
 
 ```
 blog.zhangyingji.cn
 ```
 
-2. 在域名解析中添加记录，主机名为blog,记录类型为CNAME，记录值为你的github pages
+在域名解析中添加记录，主机名为blog,记录类型为CNAME，记录值为你的github pages
 
 ```
 # 不要忽略后面的 .
