@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "JavaScript高级程序设计学习笔记"
-subtitle:   "简单记录"
+subtitle:   "第3版"
 date:       2018-08-19 16:42:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
