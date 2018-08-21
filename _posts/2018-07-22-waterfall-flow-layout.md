@@ -7,7 +7,8 @@ author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - JavaScript CSS
+    - JavaScript
+    - CSS
 ---
 
 ## 思路
