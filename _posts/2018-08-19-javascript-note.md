@@ -295,12 +295,113 @@ splice(2,1,"zhang");
 
 - 位置方法
 
+接收的参数：要查找项和表示查找起点的索引（可选）
+
+```
+// 从开头向后查找
+indexOf()
+// 从结尾向前查找
+lastIndexOf()
+```
+
+- 迭代方法
+
+...
+
+- 归并方法
+ 
+...
+
+##### Date 类型
+
+```
+// 创建,获得当前日期和时间
+var now = new Date();
+
+// 基于GTM创建指定日期 
+// 1 Date.parse(),可以后台调用
+var someDate = new Date("May 25,2004");
+// 2 Date.UTC()
+// GMT 2005.5.5 5:55:55,一月是0
+var allFives = new Date(Date.UTC(2005,4,5,17,5,5)
+
+// 基于系统设置本地时区，参数一致
+var allFives = new Date(2005,4,5,17,5,5)
+
+// 返回调用方法时的毫秒数
+var start = Date.now();
+```
+
+- 继承的方法/格式化方法
+- 日期/时间组件方法 P102
+
+##### RegExp类型
+
+- 创建
+
+```
+// 使用字面量形式
+var expression = / pattern / falgs
+
+// 使用构造函数
+var pattern = new RegExp("pattern","flags")
+```
+
+flgs可有一或多个：
+1. g 被应用于所有字符串
+2. i 不区分大小写
+3. m 到达一行末尾时还会继续查找下一行
+
+- 正则表达式元字符需要转义：
+([{\^$|)>*+.]}
+
+- RegExp实例属性、方法
+
+```
+// exec()
+// test()，验证是否匹配时常用
+if(pattern.test(text)) {
+    alert("matched")
+}
+```
+
+- RegExp构造函数属性、模式局限性
+
+...
+
+##### Function类型
+
+- 声明
+
+```
+// 函数声明，提前
+function sum(num1,num2){}
+
+// 函数表达式,另外构造函数法不推荐
+var sum = function(num1,num2){}
+```
+
+- 没有重载
+- 作为值的函数
+- 函数内部属性：arguments,this
+
+```
+// arguments.callee解除代码与函数名的耦合
+function factorial(num) {
+    if(num <= 1) {
+        return 1;
+    } else {
+        return num * arguments.callee(num-1);
+    }
+}
+
+//
+```
+
+
+##### 基本包装类型
+
+##### 单体内置对象
+
+
 ## 6 面向对象
-
-## 24 最佳实践
-##### 可维护性
-
-- 缩进4个空格
-- 注释
-
-函数/方法、大段代码、复杂算法
