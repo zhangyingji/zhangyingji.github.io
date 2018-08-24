@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "ECMAScript 6 学习笔记"
-subtitle:   "阮一峰"
+title:      "ECMAScript 6"
+subtitle:   " 学习笔记"
 date:       2018-08-22 17:16:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "瀑布流布局"
-subtitle:   "waterfall"
+subtitle:   ""
 date:       2018-07-22 22:50:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
