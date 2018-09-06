@@ -29,9 +29,9 @@ tags:
 
 ## 浏览器前缀
 
-- webkit  以webkit做内核的浏览器
-- ms IE
-- moz 火狐
+- webkit  以webkit/Blink做内核的浏览器:chrome、傲游
+- ms Trident: IE
+- moz Gecko: Firefox 
 - o opera
 
 
