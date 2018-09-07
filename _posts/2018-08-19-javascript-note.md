@@ -387,6 +387,7 @@ var sum = function(num1,num2){}
 
 ```
 // arguments.callee解除代码与函数名的耦合
+// 现在已不推荐使用,因为每次递归调用时都需要重新创建。影响浏览器的性能，还会影响闭包
 function factorial(num) {
     if(num <= 1) {
         return 1;
@@ -395,13 +396,135 @@ function factorial(num) {
     }
 }
 
-//
+// 改进的方法是给内部函数一个名字
 ```
 
+- 函数属性和方法
+
+属性有 length 和 prototype
+
+方法有 apply() 和 call(),实际作用是设置函数体内this对象的值，区别在于接收参数的方式不同
+
+```
+// apply()接收两个参数：一个是在其中运行函数的作用域，另一个是参数数组
+
+// call()接收的参数：第一个是在其中运行函数的作用域，其余参数要直接传递给函数
+
+// 强大之处在于扩充函数的作用域
+window.color = "red";
+var o = { color: "blue"};
+
+funciton sayColor(){
+    alert(this.color);
+}
+
+sayColor();     //red
+
+sayColor.call(this);    //red
+sayColor.call();    //red
+sayColor.call();    //blue
+```
 
 ##### 基本包装类型
+
+...
 
 ##### 单体内置对象
 
 
-## 6 面向对象
+## 6 面向对象的程序设计
+##### 
+
+
+
+
+
+## 21 Ajax与Comet
+##### 跨域与资源共享CORS
+
+请求和响应不包含cookie
+
+
+
+
+##### 图像Ping
+
+- 原理
+
+<img>标签跨域不受限
+
+- 应用场景
+
+常用于跟踪用户点击页面或动态广告曝光次数
+
+- 优点
+
+兼容性好
+
+- 缺点
+
+仅限GET；无法访问服务器的响应文本，单向通信
+
+```
+var img = new Image();
+// 如此只要请求完成就能得到通知
+img.onload = img.onerror = function(){
+    alert("Done");
+};
+img.src = "http://www.example.com/test?name=zhangyingji";
+```
+
+##### JSONP
+
+由*回调函数*和*数据*组成
+
+- 原理
+
+动态<script>元素跨域不受限
+
+- 优点
+
+简单易用，相对于图像Ping能够直接访问响应文本，双向通信
+
+- 缺点
+
+仅限GET；需要确保其他域的安全；难以确定JSONP请求是否失败
+
+```
+function handleResponse(response){
+    alert(response);
+}
+
+var script = document.createElement("script);
+script.src = "http://freegeoip.net/json/?callback=handleResponse";
+document.body.insertBefore(script,document,body.firstChild);
+
+// JQuery
+$(function(){
+    $.ajax({
+        type: "get",
+        async: false,
+        url: "",
+        dataType: "jsonp",
+        // 传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+        jsonp: "callback",
+        // 回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动处理数据 jsonpCallback:"flightHandler",
+        success: function(json){
+            alert('success');
+        },
+        error: function(){
+            alert('fail');
+        }
+    }); 
+});
+```
+
+
+
+## 24 最佳实践
+##### 可维护性
+
+- 缩进4个空格
+- 注释
+
+函数/方法、大段代码、复杂算法
