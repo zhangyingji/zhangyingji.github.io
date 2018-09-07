@@ -19,13 +19,16 @@ tags:
 ## 2 使用JS
 
 - noscript标签 脚本不能执行时显示此部分
+ 
 - 延迟脚本
+
 ```
 // 页面解析完后运行，只适用外部脚本，且不一定按顺序执行
 <script> defer=“defer”></script>
 ```
 
 - 异步脚本
+
 ```
 // 需要确保脚本不存在依赖关系
 <stript async></sctipt>
@@ -36,11 +39,13 @@ tags:
 - 标识符 驼峰表示法
 - 注释 //  /**/
 - 严格模式
+
 ```
 “use strict”;
 ```
 
 - 变量
+
 ```
 var message = "hi";
 ```
@@ -79,20 +84,18 @@ var lang = "Java" + "Script";
 检测类型： typeof
 
 ##### 操作符
-```
-++ --
-~ NOT
-& AND
-| OR
-^ XOR
-<< 左移
-\>> 有符号右移; >>> 无符号右移
-&& || ! 与或非
-\* % + -
-< > <= >= 
-== != === !===
-?: = ,
-```
+- ++ --
+- ~ NOT
+- & AND
+- | OR
+- ^ XOR
+- << 左移
+- \>> 有符号右移; >>> 无符号右移
+- && || ! 与或非
+- \* % + -
+- < > <= >= 
+- == != === !===
+- ?: = ,
 
 ##### 语句
 
@@ -110,6 +113,7 @@ var lang = "Java" + "Script";
 严格模式下不允许使用，大量使用会导致性能下降
 
 - switch
+
 ```
 switch(expression) {
     case value: statement
@@ -121,6 +125,7 @@ switch(expression) {
 ##### 函数
 
 - function
+
 ```
 // 不能重载，但是可通过arguments对象访问参数数组，判断arguments.length达到伪重载
 function functionName(arg0,...,argN) {
@@ -141,12 +146,14 @@ function functionName(arg0,...,argN) {
 - 检测类型
 
 基本数据类型用 typeof
+
 ```
 // 对象或者null则返回object
 ```
 
 
 对象类型用 instanceof
+
 ```
 // 引用类型、Object构造函数为true,基本类型则返回false
 alert(person instanceof Object)
@@ -167,6 +174,7 @@ if、for语句声明的变量会存在于外部执行环境中
 使用var声明的变量会被添加到最接近的环境中，如函数内最接近的环境为该函数的局部环境；若不使用var，则添加至全局环境
 
 - 查询标识符
+
 ```
 // 向上逐级查询，匹配即停止
 var color = "blue";
@@ -198,6 +206,7 @@ alert(getColor()); // "red"
 ##### Object类型
 
 - 创建
+
 ```
 // 1 new
 var person = new Object();
@@ -214,6 +223,7 @@ var person = {
 ##### Array类型
 
 - 创建
+
 ```
 // 1 new
 // new可省略
@@ -227,6 +237,7 @@ var names = [];
 
 - length属性
 - 检测数组
+
 ```
 // 一个网页/全局作用域/框架
 if (value instanceof Array) {
@@ -245,6 +256,7 @@ toLocaleString();tostring();valueOf()
 - 栈方法 push();pop()
 - 队列方法 push();shift()
 - 重排序方法 reverse();sort()
+
 ```
 // sort()会转化为字符串后再比较
 // 故接受一个比较函数来正确排序
@@ -262,6 +274,7 @@ values.sort(compare);
 ```
 
 - 操作方法
+
 ```
 // concat() 创建新的数组，末尾追加
 var colors2 = colors.concat("yellow");
@@ -281,6 +294,7 @@ splice(2,1,"zhang");
 - 位置方法
 
 接收的参数：要查找项和表示查找起点的索引（可选）
+
 ```
 // 从开头向后查找
 indexOf()
@@ -297,6 +311,7 @@ lastIndexOf()
 ...
 
 ##### Date 类型
+
 ```
 // 创建,获得当前日期和时间
 var now = new Date();
@@ -321,6 +336,7 @@ var start = Date.now();
 ##### RegExp类型
 
 - 创建
+
 ```
 // 使用字面量形式
 var expression = / pattern / falgs
@@ -338,6 +354,7 @@ flgs可有一或多个：
 ([{\^$|)>*+.]}
 
 - RegExp实例属性、方法
+
 ```
 // exec()
 // test()，验证是否匹配时常用
@@ -353,6 +370,7 @@ if(pattern.test(text)) {
 ##### Function类型
 
 - 声明
+
 ```
 // 函数声明，提前
 function sum(num1,num2){}
@@ -364,6 +382,7 @@ var sum = function(num1,num2){}
 - 没有重载
 - 作为值的函数
 - 函数内部属性：arguments,this
+
 ```
 // arguments.callee解除代码与函数名的耦合
 // 现在已不推荐使用,因为每次递归调用时都需要重新创建。影响浏览器的性能，还会影响闭包
@@ -383,6 +402,7 @@ function factorial(num) {
 属性有 length 和 prototype
 
 方法有 apply() 和 call(),实际作用是设置函数体内this对象的值，区别在于接收参数的方式不同
+
 ```
 // apply()接收两个参数：一个是在其中运行函数的作用域，另一个是参数数组
 
@@ -427,6 +447,7 @@ W3C标准，需要服务器设置header ：Access-Control-Allow-Origin
 - 缺点
 
 IE10+
+
 ```
 // 后端开启CORS权限, *表示允许任何域
 // 请求和响应不包含cookie
@@ -450,6 +471,7 @@ Access-Control-Allow-Origin: https://blog.zhangyingji.cn
 - 缺点
 
 仅限GET；无法访问服务器的响应文本，单向通信
+
 ```
 var img = new Image();
 // 如此只要请求完成就能得到通知
