@@ -23,13 +23,13 @@ tags:
 - 延迟脚本
 ```
 // 页面解析完后运行，只适用外部脚本，且不一定按顺序执行
-<script> defer=“defer”></script>
+defer=“defer”
 ```
 
 - 异步脚本
 ```
 // 需要确保脚本不存在依赖关系
-<stript async></sctipt>
+stript async
 ```
 
 ## 3 基本概念
