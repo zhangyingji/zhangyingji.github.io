@@ -29,15 +29,16 @@ tags:
 ## localStroage
 
 #### API
+
 ```
 // 增加数据项
-localStorage.setItem(`myCat`, `Tom`);
+window.localStorage.setItem(`myCat`, `Tom`);
 // 读取
-localStorage.getItem(`myCat`);
+window.localStorage.getItem(`myCat`);
 // 移除
-localStorage.removeItem(`myCat`);
+window.localStorage.removeItem(`myCat`);
 // 移除所有
-localStorage.clear();
+window.localStorage.clear();
 ```
 
 #### 应用场景
