@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "前端面试遇到的问题[更新中]"
+title:      "前端面试总结"
 subtitle:   ""
 date:       2018-09-26 22:18:00
 author:     "zhangyingji"
@@ -20,25 +20,29 @@ tags:
 
 ## HTML
 
+
 ## CSS
 
 **[水平垂直居中](https://blog.zhangyingji.cn/2018/07/23/center/)**
-
-**常见布局方法**
 
 **[flex布局](https://blog.zhangyingji.cn/2018/05/18/flex/)**
 
 **[响应式设计](https://blog.zhangyingji.cn/2018/09/15/web-responsive-design/)**
 
+**常见布局方法**
+
+
 ## JS
 
 **数组常用方法**
 
+splice(),join(),concat(),push(),pop(),unshift(),shift(),reverse()
+
 **闭包**
 
-**原型链**
+能够读取其他函数内部变量的函数
 
-**事件流**
+**原型链 事件流 ajax**
 
 **作用域，怎么预防作用域污染？**
 
@@ -54,22 +58,27 @@ tags:
 
 **JS变量的内存分配？**
 
-**用原生JS实现拖拽一个DIV？**
+**用原生JS实现拖拽一个DIV**
 
 ## 跨域
 
 **跨域的原理、解决方法**
 
 
+
 ## 框架
 
-**react、angular、vue的区别**
+**[react、angular、vue的对比](https://cn.vuejs.org/v2/guide/comparison.html)**
 
 **vue组件通信**
 
+- 父=>子：props属性
+- 子=>父：$emit(）
+- 非父子：建立空的实例（还有更好的办法）
+- 兄弟：子=>父=>子
+- 大型应用：引入vuex插件
+
 # 性能优化
-
-
 
 # 前端工程化
 
@@ -83,13 +92,12 @@ tags:
 
 **项目遇到的难题、解决方法**
 
-**觉得自己还有什么能力没展示出来**
+**你在本科期间的亮点**
 
 **在同行竞争者，觉得自己还有什么要提升的**
 
 **还有什么问题要问**
 
-实习期、上升空间、薪资等
 
 
 
