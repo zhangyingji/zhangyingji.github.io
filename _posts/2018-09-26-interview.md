@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "前端面试总结"
+title:      "前端面试小结"
 subtitle:   ""
 date:       2018-09-26 22:18:00
 author:     "zhangyingji"
