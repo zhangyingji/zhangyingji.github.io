@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "MongoDB集群（分片+副本集）"
+title:      "MongoDB集群搭建（分片+副本集）"
 subtitle:   ""
 date:       2018-05-12 23:31:00
 author:     "zhangyingji"

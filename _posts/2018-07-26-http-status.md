@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "最常见的HTTP状态码"
+title:      "常见的HTTP状态码"
 subtitle:   ""
 date:       2018-07-26 10:30:00
 author:     "zhangyingji"

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "远程桌面连接出现内部错误"
+title:      "windows远程桌面连接出现内部错误"
 subtitle:   ""
 date:       2018-03-23 20:30:00
 author:     "zhangyingji"

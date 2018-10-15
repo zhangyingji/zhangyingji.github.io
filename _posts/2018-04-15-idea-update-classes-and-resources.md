@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "IDEA热加载自动更新（Update classes and resources ）"
+title:      "IDEA热加载自动更新（Update classes and resources）"
 subtitle:   ""
 date:       2018-04-15 13:58:00
 author:     "zhangyingji"

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "ECMAScript 6"
-subtitle:   "学习笔记"
+subtitle:   "笔记"
 date:       2018-09-28 14:28:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
