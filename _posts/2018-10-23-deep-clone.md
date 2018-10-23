@@ -16,7 +16,7 @@ tags:
 
 ## 深拷贝实现
 
-1. 一层拷贝用 Object.assign()函数
+1 一层拷贝用 Object.assign()函数
 
 ```
 var obj1 = { a: 10, b: 20, c: 30 };
@@ -25,7 +25,7 @@ obj2.b = 100;
 console.log(obj1);
 ```
 
-2. 用JSON对象的stringify和parse方法
+2 用JSON对象的stringify和parse方法
 
 ```
 function deepClone(obj){
@@ -41,7 +41,7 @@ a[2][0]=1;
 console.log(a,b);
 ```
 
-3. 用JQ的extend方法
+3 用JQ的extend方法
 
 $.extend( [deep, ]target, object1 [, objectN ] )
 
@@ -53,7 +53,7 @@ a[2][0]=1;
 console.log(a,b);
 ```
 
-4. 递归
+4 递归
 
 ```
 function deepClone(obj){
@@ -80,7 +80,7 @@ a[0] = 2;
 console.log(a,b);
 ```
 
-5. 使用Object.create()方法
+5 使用Object.create()方法
 
 ```
 function deepClone(initalObj, finalObj) {    
