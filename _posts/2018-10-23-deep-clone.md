@@ -34,16 +34,16 @@ function deepClone(obj){
     return objClone
 }
 
-let a=[0,1,[2,3],4],
-    b=deepClone(a);
-a[0]=1;
-a[2][0]=1;
+let a = [0,1,[2,3],4],
+    b = deepClone(a);
+a[0] = 1;
+a[2][0] = 1;
 console.log(a,b);
 ```
 
 3 用JQ的extend方法
 
-$.extend( [deep, ]target, object1 [, objectN ] )
+$.extend( [true, ]target, object1 [, objectN ] )
 
 ```
 let a=[0,1,[2,3],4],
