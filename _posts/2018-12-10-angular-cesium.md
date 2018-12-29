@@ -7,7 +7,7 @@ author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - JavaScript
+    - 框架
 ---
 
 ## 前言
