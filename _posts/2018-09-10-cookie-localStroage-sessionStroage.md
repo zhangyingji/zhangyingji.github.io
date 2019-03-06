@@ -29,16 +29,15 @@ tags:
 ## localStroage
 
 #### API
-
 ```
 // 增加数据项
-window.localStorage.setItem(`myCat`, `Tom`);
+localStorage.setItem(`myCat`, `Tom`);
 // 读取
-window.localStorage.getItem(`myCat`);
+localStorage.getItem(`myCat`);
 // 移除
-window.localStorage.removeItem(`myCat`);
+localStorage.removeItem(`myCat`);
 // 移除所有
-window.localStorage.clear();
+localStorage.clear();
 ```
 
 #### 应用场景
@@ -70,7 +69,6 @@ API、优点同localStroage
 #### 特点
 
 同源策略限制
-
 
 ## 三者区别
 
