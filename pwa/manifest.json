@@ -1,14 +1,14 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
+  "name": "Zhangyingji Blog",
+  "short_name": "Zhangyingji Blog",
   "description": "About an engineer & designer who loves web.",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/512.png",
-    "sizes": "512x512",
+    "src": "icons/200.png",
+    "sizes": "200x200",
     "type": "image/png"
   }],
   "background_color": "#fff",
