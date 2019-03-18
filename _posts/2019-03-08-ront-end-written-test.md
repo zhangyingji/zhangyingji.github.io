@@ -10,11 +10,11 @@ tags:
     - 工作
 ---
 
-## HTML
+# HTML
 
 - HTML5了解哪些？
 
-## CSS
+# CSS
 
 - CSS3了解哪些？
 - 常用布局
@@ -23,7 +23,7 @@ tags:
 - [响应式设计](https://blog.zhangyingji.cn/2018/09/15/web-responsive-design/)
 - CSS3动画、阴影
 
-## JS
+# JS
 
 - ES6了解哪些？
 - 常用方法
@@ -36,7 +36,7 @@ object：assign(),create(),defineProperties(),entries(),values(),hasOwnProperty(
 
 - 闭包：能够读取其他函数内部变量的函数
 
-```
+```javascript
 function f1(){
   n=999;
   function f2(){
@@ -59,7 +59,7 @@ result();
 - [深拷贝](http://blog.zhangyingji.cn/2018/10/23/deep-clone/)
 - 数组去重
 
-```
+```javascript
 Array.from(new set(arr));
 ```
 
