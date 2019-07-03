@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "GitHub Pages + Jekyll"
-subtitle:   "\"快速搭建博客\""
+title:      "GitHub Pages + Jekyll 快速搭建博客"
+subtitle:   ""
 date:       2018-08-08 19:17:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
@@ -10,22 +10,19 @@ tags:
     - 分享
 ---
 
-### GitHub Pages
-开启本功能，首先新建仓库,仓库名为
+# Zhang Yingji's Blog
 
-```
-# 用户名 + .github.io
-zhangyingji.github.io
-```
+https://github.com/zhangyingji
 
-则GitHub Pages的功能默认开启
+## GitHub Pages
 
-### Jekyll环境配置
-##### 安装Ruby + DevKit
+开启本功能，首先需要新建仓库,仓库名为*用户名.github.io*，则GitHub Pages的功能默认开启
 
-https://rubyinstaller.org/downloads/
+## Jekyll
 
-##### JeKyll
+首先需要安装`Ruby` + `DevKit` : https://rubyinstaller.org/downloads/
+
+然后安装`Jekyll`及初始化
 
 ```
 # 安装
@@ -48,7 +45,7 @@ jekyll serve
 # 输入127.0.0.1:4000查看本地效果
 ```
 
-### 选择合适的主题
+## 选择合适的主题
 
 可以去Jekyll主题网站挑选，也可以在github上搜索关键字jekyll theme,clone他人的项目clone并修改，推送到远程仓库即可
 
