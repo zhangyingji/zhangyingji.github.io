@@ -2,7 +2,7 @@
 layout:     post
 title:      "web前端响应式设计"
 subtitle:   ""
-date:       2018-09-15 17:25:00
+date:       2019-07-04 22:54:00
 author:     "zhangyingji"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
@@ -23,7 +23,7 @@ tags:
 
 # 响应式布局
 
-首先推荐以移动端，PC端作为扩展，在于可以避免移动端加载多余的PC端内容。响应式布局主要可以结合几种实现方式：
+首先推荐以移动端为主、PC端为扩展的方式，这样可以避免移动端加载多余的PC端内容。响应式布局主要可以结合几种实现方式：
 
 ## a 移动端布局控制：HTML5 视区(viewport)
 
@@ -150,7 +150,7 @@ tags:
 
 # 响应式HTML和CSS
 
-对于要在移动端要隐藏的元素通过display: none来控制html是否显示；
+对于要在移动端要隐藏的元素通过`display: none`来控制html是否显示；
 
 对于展示样式不同的，需要在PC端额外引入css覆盖移动端的原有样式。
 
@@ -172,6 +172,12 @@ html{font-size: 62.5%;}
 @media (min-width:640px){body{font-size: 1rem;}}
 @media (min-width:960px){body{font-size: 1.2rem;}}
 @media (min-width:1200px){body{font-size: 1.5rem;}}
+
+/* 使用JS控制 */
+var docEl = document.documentElement
+var clientWidth = docEl.clientWidth
+// 750为设计图的宽度,100px即为1rem
+docEl.style.fontSize = 100 *(clientWidth/750) + 'px'
 ```
 
 ## 图片
@@ -214,5 +220,4 @@ JavaScript根据userAgent特性来加载不同域下的CSS，可以尽可能避�
 
 1. web前端响应式设计总结 https://blog.csdn.net/pupilxiaoming/article/details/77703805
 2. 跟着写一个CSS栅格布局 https://blog.csdn.net/qq_37204849/article/details/73542782
-
 
