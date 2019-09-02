@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Linux"
+title:      "SQL注入漏洞"
 subtitle:   ""
 date:       2019-09-02 19:53:00
 author:     "zhangyingji"
