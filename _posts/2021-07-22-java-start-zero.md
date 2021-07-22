@@ -10,14 +10,16 @@ tags:
     - JavaScript
 ---
 
-# 第一章 Java编程基础
+# 《零基础学Java》 - 臧萌
 
-## 05 环境搭建
+## 第一章 Java编程基础
+
+### 05 环境搭建
 
 - JDK11下载地址：[点击这里](https://res001.geekbang.org/tools/jdk-11.0.2_windows-x64_bin.exe)
 - IntelliJ IDEA下载地址：[点击这里](https://www.jetbrains.com/idea/)
 
-## 07 HelloWord.java
+### 07 HelloWord.java
 
 ```java
 public class HelloWorld {
@@ -27,7 +29,7 @@ public class HelloWorld {
 }
 ```
 
-## 12 Java中的基本数据类型
+### 12 Java中的基本数据类型
 
 整数类型
 

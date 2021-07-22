@@ -10,9 +10,11 @@ tags:
     - JavaScript
 ---
 
-# 从零开始：JavaScript语言是如何构建起来的
+# 《JavaScript核心原理解析》 - 周爱民
 
-## 01 | delete 0：JavaScript中到底有什么是可以销毁的
+## 从零开始：JavaScript语言是如何构建起来的
+
+### 01 | delete 0：JavaScript中到底有什么是可以销毁的
 
 - delete 运算符尝试删除值数据时，会返回 true，用于表示没有错误（Error）
 - delete 0 的本质是删除一个表达式的值（Result）
@@ -24,7 +26,7 @@ tags:
 1. [MDN：delete操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete)
 2. [深入detele](https://time.geekbang.org/column/article/164312)
 
-## 02 | var x = y = 100：声明语句与语法改变了JavaScript语言核心性质
+### 02 | var x = y = 100：声明语句与语法改变了JavaScript语言核心性质
 
 - var 等声明语句总是在变量作用域（变量表）或词法作用域中静态地声明一个或多个标识符
 - 全局变量的管理方式决定了“向一个不存在的变量赋值”所导致的变量泄漏是不可避免的
