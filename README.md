@@ -1,6 +1,6 @@
 # Zhang Yingji's Blog
 
-https://blog.zhangyingji.cn/ 
+https://zhangyingji.cn/ 
 
 ![Zhang Yingji's Blog](https://github.com/zhangyingji/zhangyingji.github.io/blob/master/img/index.png)
 
