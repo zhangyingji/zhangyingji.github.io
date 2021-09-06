@@ -45,3 +45,46 @@ a.x = a = {n:2};
 console.log(a.x); // --> undefined
 console.log(ref.x); // {n:2}
 ```
+
+### 04 | export default function() {}：你无法导出一个匿名函数表达式
+
+解析export
+
+```js
+
+// 导出“（声明的）名字”
+export <let/const/var> x ...;
+export function x() ...
+export class x ...
+export {x, y, z, ...};
+
+
+// 导出“（重命名的）名字”
+export { x as y, ...};
+export { x as default, ... };
+
+
+// 导出“（其它模块的）名字”
+export ... from ...;
+
+
+// 导出“值”
+export default <expression
+```
+
+### 05 | for (let x of [1,2,3]) ...：for循环并不比使用函数递归节省开销
+
+循环语句（对于支持“let/const”的 for 语句来说）“通常情况下”只支持一个块级作用域
+
+## 从表达式到执行引擎：JavaScript是如何运行的 (7讲)
+
+### 06 | x: break x; 搞懂如何在循环外使用break，方知语句执行真解
+
+### 07 | `${1}`：详解JavaScript中特殊的可执行结构
+
+### 08 | x => x：函数式语言的核心抽象：函数与表达式的同一性
+
+1. 传入参数的过程执行于函数之外，例如f(a=100)；
+2. 绑定参数的过程执行于函数（的闭包）之内，例如function foo(x=100) ..。x=>x在函数界面的两端都是值操作，也就是说 input/output 的都是数据的值，而不是引用。
+3. 参数有两种初始化方法，它们根本的区别在于绑定初值的方式不同。
+4. 闭包是函数在运行期的一个实例。
